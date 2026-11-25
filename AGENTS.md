@@ -19,13 +19,13 @@ Follow `audit-writing/PROMPT.md` in order.
    ```
 
    `article_type` is experiment, archival, field, or review. Repeat `--tag` for an OR match. More than five matches keeps the five most recent. Fewer than five fills from the same type. If that type has fewer than five papers, use the shorter list. Read those papers for cadence only.
-4. If `raw/` is not mounted, select from `audit-writing/CATALOG.md`, say the full text was unavailable, and do not invent articles. The articles live with the project store copy of this system, not in this public repository.
+4. The twenty articles are in `audit-writing/raw/`, with tags in `audit-writing/_meta/`. Run `select_papers.py` from `audit-writing/` so it reads that copy. If `raw/` is missing, select from `audit-writing/CATALOG.md`, say the full text was unavailable, and do not invent articles.
 5. Draft from the matching file in `audit-writing/templates/` when the piece is an experiment abstract, an introduction, a hypothesis block, or a method outline. Archival and review pieces use the matching section of `structure-patterns.md`.
 6. Fill `audit-writing/CHECKLIST.md` in the reply, then give the prose.
 7. In a second turn, clean listed AI tells. Where a tell-rule and the DNA conflict, the DNA wins.
 
 Priority: the assignment, then the genre template, then language and visual rules, then the cognitive frames. A venue named in the assignment overrides citation punctuation. `MEMORY.md` holds the default when no venue is named.
 
-## What not to commit
+## Visibility
 
-Do not add the twenty source articles, or a `raw/` directory of those articles, to this repository.
+This repository is meant to stay private, because `audit-writing/raw/` holds the twenty source articles. Do not copy that directory into a public repository.

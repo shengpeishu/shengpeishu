@@ -15,7 +15,7 @@ Venue, length, and citation defaults for drafts in this system. Sentence shape s
 
 `article_type` is the genre token in the filename (experiment, archival, field, review). `topic_tags` are the subject needles. Select with `select_papers.py`. Do not select on the old value `analysis`; that label was replaced because it could not separate an experiment from an archive.
 
-Full text stays in `raw/` on the project store. It is not copied into the public repository. `catalog.json` and `CATALOG.md` are the metadata index.
+Full text is in `raw/` next to this file (`audit-writing/raw/` in the repository) and on the project store at `docs/audit-writing-dna/raw/`. The repository is meant to stay private because of those articles. `catalog.json` and `CATALOG.md` are the metadata index.
 
 ## Length
 
